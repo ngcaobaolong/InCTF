@@ -45,9 +45,9 @@ Let's see what inside:
 
 ![updater](https://i.imgur.com/rjT3N4F.png)
 
-So basically it download all file in /uploads/packages/ on the server updates.safextractor.lan, run it with **dpgk -i** So we can exploit it by placing a deb file with **--before-install** tag. It will execute the script place in that tag.
+So basically it download all file in /uploads/packages/ on the server updates.safextractor.lan, run it with **dpgk -i** So we can exploit it by relace updates.safextractor.lan ip with our own ip, or change our. After that place a deb file with **--before-install** tag in that folder. It will execute any script placed in that tag.
 
-/etc/hosts:
+Let's check /etc/hosts:
 
 ![hosts](https://i.imgur.com/z8YgmDR.png)
 
