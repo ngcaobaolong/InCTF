@@ -15,11 +15,15 @@ At first, they give us a hint about a web app is exploit-able and "forget to cle
 
 So web upload, only accept zip, rar, tar. The uploaded file will be extracted on the web server.
 
-I tried to upload a shell, but when open it will download it, only text file are showed. So I tried upload symbolic link to the /etc/passwd file (https://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/).
+I tried to upload a shell, but when open it will download it, only text file are showed. So I tried upload symbolic link to the /etc/passwd file (https://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/):
+```
+ln -s "../../../../../../../../../../home/joyhopkins" link
+zip -y test2.zip link
+```
 And it work: (skip those lmao file, i forgot to clear the folder xD )
 ![/etc/passwd](https://i.imgur.com/L5iKCq3.png)
 
-So i upload another file link to current folder, we got LFI: 
+So i upload another file link to current folder, we got Local File Read: 
 ![LFI](https://i.imgur.com/n09vxYM.png)
 
 After that i check all the file in the folder, and in .bash_history (oh that history lol) we have a credential:
