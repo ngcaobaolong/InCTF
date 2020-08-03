@@ -22,7 +22,7 @@ And it work: (skip those lmao file, i forgot to clear the folder xD )
 So i upload another file link to current folder, we got LFI: 
 ![LFI](https://i.imgur.com/n09vxYM.png)
 
-After that i check all the file in the folder, anh in .bash_history we have a credential:
+After that i check all the file in the folder, and in .bash_history (oh that history lol) we have a credential:
 ![cred](https://i.imgur.com/uolyJFi.png)
 
 SSH into the server with obtained cred, we got user **joyhopkins**
