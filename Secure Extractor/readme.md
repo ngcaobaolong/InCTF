@@ -63,6 +63,6 @@ And we got reverse shell, with **root**
 
 flag is in /root folder
 
-The reason why i didnt solve the challenge during contest time is I skipped the **updater** file. You learn something new everyday.
+The reason why i didnt solve the challenge during contest time is because I skipped the **updater** file. You learn something new everyday.
 
 Thanks for reading.
