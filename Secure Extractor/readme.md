@@ -65,4 +65,6 @@ flag is in /root folder
 
 The reason why i didnt solve the challenge during contest time is because I skipped the **updater** file. You learn something new everyday.
 
+Kudos to @vudq for helping me to solve this challenge
+
 Thanks for reading.
